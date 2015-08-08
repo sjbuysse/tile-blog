@@ -1,6 +1,7 @@
 html, body {
   font-family: 'Raleway', sans-serif;
-  background-color: #E7E7E7; }
+  background-color: #E7E7E7;
+  color: #8A8A8A; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
@@ -36,14 +37,33 @@ a {
 
 .grid {
   min-height: 100vh;
-  max-width: 1400px;
-  margin: 0 auto;
-  background-color: green; }
+  max-width: 1200px;
+  margin: 2rem auto; }
+
+#grid[data-columns]::before {
+  content: '4 .column.size-1of4'; }
 
 .tile {
-  width: 300px;
-  height: 500px;
-  background: yellow; }
+  background-color: white;
+  padding-bottom: 1px;
+  margin-bottom: 2rem;
+  box-shadow: 5px 7px 20px -8px rgba(0, 0, 0, 0.8); }
+  .tile img {
+    width: 100%;
+    display: block; }
+  .tile h2 {
+    text-transform: uppercase;
+    margin-left: 1rem; }
+  .tile p {
+    margin: 1rem; }
+
+.column {
+  float: left; }
+  .column + .column {
+    margin-left: 2.66667%; }
+
+.size-1of4 {
+  width: 23%; }
 
 .hero-image {
   background-image: url(img/waterland.jpg);
@@ -52,5 +72,18 @@ a {
   background-size: cover;
   background-position: 85% 66%;
   margin: 0; }
+  .hero-image .motivational {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    color: white; }
+    .hero-image .motivational h1, .hero-image .motivational h2 {
+      font-family: Tangerine, cursive;
+      font-weight: 500;
+      font-size: 3rem;
+      text-shadow: 1px 1px 7px black;
+      margin: 0.5rem; }
+    .hero-image .motivational h2 {
+      float: right; }
 
 /*# sourceMappingURL=main.css.map */
