@@ -47,7 +47,8 @@
 .prev {
   left: 3rem;
   position: absolute;
-  top: 45vh; }
+  top: 45vh;
+  z-index: 1; }
   .prev::before {
     font-family: 'icomoon';
     content: "";
@@ -61,7 +62,8 @@
 .next {
   right: 3rem;
   position: absolute;
-  top: 45vh; }
+  top: 45vh;
+  z-index: 1; }
   .next::before {
     font-family: 'icomoon';
     content: "";

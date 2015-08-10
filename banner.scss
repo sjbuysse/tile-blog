@@ -1,6 +1,7 @@
 @mixin arrow-icon($icon){
     position: absolute;
     top: 45vh;
+    z-index: 1;
     &::before {
         font-family: 'icomoon';
         content: $icon;
