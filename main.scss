@@ -122,20 +122,7 @@ a {
             }
         }
     }
-}
-
-.banner { 
-    position: absolute; 
-    left: 0; 
-    ul{
-        padding: 0;
-    }
-    li { 
-        list-style: none; 
-    }
-    ul li { 
-        float: left; 
-    }
+    
 }
 
 
@@ -207,3 +194,4 @@ $tile-margin: (100% - (4 * $tile-width))/3;
         }
     }
 }
+

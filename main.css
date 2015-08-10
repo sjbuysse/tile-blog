@@ -96,16 +96,6 @@ a {
           left: -1.2rem;
           top: 1px; }
 
-.banner {
-  position: absolute;
-  left: 0; }
-  .banner ul {
-    padding: 0; }
-  .banner li {
-    list-style: none; }
-  .banner ul li {
-    float: left; }
-
 /**********************
 * TILE LAYOUT
 **********************/
