@@ -65,6 +65,7 @@ a {
     height: $navbar-height;
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     padding: 0;
     h1{
@@ -121,18 +122,21 @@ a {
             }
         }
     }
-    .article-images{
-        width: 100vw;
-        height: 90vh;
-        background: green;
-        position: absolute;
-        left: 0;
-        background-image: url("img/hero.jpg");
-        background-size: cover;
-        background-repeat: none;
-    }
 }
 
+.banner { 
+    position: absolute; 
+    left: 0; 
+    ul{
+        padding: 0;
+    }
+    li { 
+        list-style: none; 
+    }
+    ul li { 
+        float: left; 
+    }
+}
 
 
 /**********************

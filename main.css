@@ -34,6 +34,7 @@ a {
   height: 5rem;
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100%;
   padding: 0; }
   .navbar h1 {
@@ -94,15 +95,16 @@ a {
           position: absolute;
           left: -1.2rem;
           top: 1px; }
-  .article .article-images {
-    width: 100vw;
-    height: 90vh;
-    background: green;
-    position: absolute;
-    left: 0;
-    background-image: url("img/hero.jpg");
-    background-size: cover;
-    background-repeat: none; }
+
+.banner {
+  position: absolute;
+  left: 0; }
+  .banner ul {
+    padding: 0; }
+  .banner li {
+    list-style: none; }
+  .banner ul li {
+    float: left; }
 
 /**********************
 * TILE LAYOUT
