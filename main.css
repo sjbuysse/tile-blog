@@ -1,3 +1,22 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-69o0dc");
+  src: url("fonts/icomoon.eot?#iefix-69o0dc") format("embedded-opentype"), url("fonts/icomoon.ttf?-69o0dc") format("truetype"), url("fonts/icomoon.woff?-69o0dc") format("woff"), url("fonts/icomoon.svg?-69o0dc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 html, body {
   font-family: 'Raleway', sans-serif;
   background-color: #E7E7E7;
@@ -14,6 +33,7 @@ a {
   background: #E7E7E7;
   height: 5rem;
   position: fixed;
+  top: 0;
   width: 100%;
   padding: 0; }
   .navbar h1 {
@@ -35,6 +55,58 @@ a {
     float: right;
     padding-right: 2rem; }
 
+/**********************
+* ARTICLE
+**********************/
+.article {
+  max-width: 900px;
+  padding-top: 1px;
+  margin: 5rem auto; }
+  .article h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem; }
+  .article p {
+    line-height: 1.75; }
+  .article .article-info {
+    text-align: center;
+    margin: 1rem auto; }
+    .article .article-info h3 {
+      display: inline-block;
+      font-size: 1rem;
+      font-style: italic;
+      font-family: 'PT Sans', sans-serif; }
+      .article .article-info h3.comments {
+        position: relative;
+        margin-left: 2.5rem; }
+        .article .article-info h3.comments::before {
+          font-family: 'icomoon';
+          content: "";
+          position: absolute;
+          left: -1.2rem;
+          top: 2px; }
+      .article .article-info h3.likes {
+        position: relative;
+        margin-left: 1.5rem; }
+        .article .article-info h3.likes::before {
+          font-family: 'icomoon';
+          content: "";
+          position: absolute;
+          left: -1.2rem;
+          top: 1px; }
+  .article .article-images {
+    width: 100vw;
+    height: 90vh;
+    background: green;
+    position: absolute;
+    left: 0;
+    background-image: url("img/hero.jpg");
+    background-size: cover;
+    background-repeat: none; }
+
+/**********************
+* TILE LAYOUT
+**********************/
 .grid {
   min-height: 100vh;
   max-width: 1200px;
