@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .banner {
   position: absolute;
   left: 0; }
@@ -42,5 +43,33 @@
 .dots li.active {
   background: #fff;
   opacity: 1; }
+
+.prev {
+  left: 3rem;
+  position: absolute;
+  top: 45vh; }
+  .prev::before {
+    font-family: 'icomoon';
+    content: "";
+    font-size: 5rem;
+    color: white;
+    color: rgba(255, 255, 255, 0.5); }
+  .prev:hover::before {
+    color: white;
+    transition: 0.5s; }
+
+.next {
+  right: 3rem;
+  position: absolute;
+  top: 45vh; }
+  .next::before {
+    font-family: 'icomoon';
+    content: "";
+    font-size: 5rem;
+    color: white;
+    color: rgba(255, 255, 255, 0.5); }
+  .next:hover::before {
+    color: white;
+    transition: 0.5s; }
 
 /*# sourceMappingURL=banner.css.map */

@@ -1,3 +1,19 @@
+@mixin arrow-icon($icon){
+    position: absolute;
+    top: 45vh;
+    &::before {
+        font-family: 'icomoon';
+        content: $icon;
+        font-size: 5rem;
+        color: white;
+        color: rgba(256, 256, 256, 0.5);
+    }
+    &:hover::before{
+        color:white;
+        transition: 0.5s;
+    }
+}
+
 .banner { 
     position: absolute; 
     left: 0; 
@@ -50,6 +66,12 @@
   opacity: 1;
 }
 
-.unslider-arrow .prev {
-    
+.prev {
+    left: 3rem;
+    @include arrow-icon("\e603")
 }
+.next {
+    right: 3rem;
+    @include arrow-icon("\e604")
+}
+

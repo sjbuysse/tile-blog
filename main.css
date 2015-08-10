@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-69o0dc");
-  src: url("fonts/icomoon.eot?#iefix-69o0dc") format("embedded-opentype"), url("fonts/icomoon.ttf?-69o0dc") format("truetype"), url("fonts/icomoon.woff?-69o0dc") format("woff"), url("fonts/icomoon.svg?-69o0dc#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?7j3tf2");
+  src: url("fonts/icomoon.eot?#iefix7j3tf2") format("embedded-opentype"), url("fonts/icomoon.ttf?7j3tf2") format("truetype"), url("fonts/icomoon.woff?7j3tf2") format("woff"), url("fonts/icomoon.svg?7j3tf2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -82,7 +82,7 @@ a {
         margin-left: 2.5rem; }
         .article .article-info h3.comments::before {
           font-family: 'icomoon';
-          content: "";
+          content: "";
           position: absolute;
           left: -1.2rem;
           top: 2px; }
@@ -91,7 +91,7 @@ a {
         margin-left: 1.5rem; }
         .article .article-info h3.likes::before {
           font-family: 'icomoon';
-          content: "";
+          content: "";
           position: absolute;
           left: -1.2rem;
           top: 1px; }
