@@ -3,6 +3,8 @@ $navbar-title-size: 3rem;
 $navbar-bottom-padding: ($navbar-height - $navbar-title-size)/2;
 $back-color: #E7E7E7;
 $text-color: #8A8A8A;
+$shark: #2a2f35;
+$darker-title: #464646;
 @mixin white-text-black-back{
     color: white;
     background: rgba(0,0,20, 0.5);
@@ -28,14 +30,14 @@ $text-color: #8A8A8A;
 html, body{
     font-family: 'Raleway', sans-serif;
     background-color: $back-color;
-    color: $text-color;
+    color: $shark;
     letter-spacing: 0.0625rem;
     word-spacing: 0.0625rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   font-weight: 500;
-  color: #464646;
+  color: $darker-title;
 }
 
 a {
@@ -84,12 +86,12 @@ a {
     li{
         list-style: none;
         margin: 0;
-        display: inline-block;
+        float:left;
         &:first-child{
             width: 30%;
         }
         &:nth-child(2){
-            width: 39%;
+            width: 40%;
             text-align: center;
         }
         &:nth-child(3){
@@ -113,9 +115,10 @@ a {
     .article-info{
         text-align: center;
         margin: 1rem auto;
-        h3{
+        h5{
             display: inline-block;
             font-size: 1rem;
+            font-weight: 500;
             font-style:italic;
             font-family: 'PT Sans', sans-serif;
             &.comments{
@@ -134,16 +137,34 @@ a {
 *********************/
 .comments{
     @include center-page;
+    padding-bottom: 3rem;
     h1 {
         font-size: 2rem;
-        border-bottom: 1px solid $text-color;
-        border-top: 1px solid $text-color;
+        border-bottom: 1px solid $shark;
+        border-top: 1px solid $shark;
         padding: 2rem 0;
         text-align: center;
         /*text-transform: uppercase;*/
     }
     .comment-wrapper {
-        padding-left: 2rem;
+        float:left;
+    }
+
+    h3 {
+        margin-top: 2rem;
+    }
+   p.comment-name {
+        text-transform: uppercase;
+        color: $darker-title;
+        font-size: 0.7rem;
+        margin: 1rem 0 0 0;
+    }
+    p.comment-body{
+        font-size: 1.1rem;
+        margin: 0.3rem 0 0 0;
+    }
+    p.comment-date {
+        font-size: 0.8rem;
     }
 }
 
@@ -216,3 +237,11 @@ $tile-margin: (100% - (4 * $tile-width))/3;
     }
 }
 
+/*********************
+ * CLEARFIX 
+ ********************/
+.clearfix:after { 
+content: ""; 
+display: table; 
+clear: both; 
+}

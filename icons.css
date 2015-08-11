@@ -26,7 +26,7 @@
 .icon-shaka:before {
     content: "\e609";
 }
-.icon-chevron-small-right:before {
+.icon-chevron-small-right:after {
     content: "\e607";
 }
 .icon-chevron-small-left:before {
