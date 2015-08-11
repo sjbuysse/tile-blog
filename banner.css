@@ -1,7 +1,8 @@
-@charset "UTF-8";
 .banner {
   position: absolute;
-  left: 0; }
+  margin-top: 5vh;
+  left: 0;
+  /*position the next element under the banner*/ }
   .banner ul {
     padding: 0;
     margin: 0; }
@@ -16,8 +17,8 @@
     list-style: none; }
   .banner ul li {
     float: left; }
-  .banner + p {
-    margin-top: 100vh; }
+  .banner + * {
+    margin-top: 108vh; }
 
 .dots {
   position: absolute;
@@ -51,7 +52,6 @@
   z-index: 1; }
   .prev::before {
     font-family: 'icomoon';
-    content: "";
     font-size: 5rem;
     color: white;
     color: rgba(255, 255, 255, 0.5); }
@@ -66,7 +66,6 @@
   z-index: 1; }
   .next::before {
     font-family: 'icomoon';
-    content: "";
     font-size: 5rem;
     color: white;
     color: rgba(255, 255, 255, 0.5); }

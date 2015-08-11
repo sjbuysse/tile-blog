@@ -1,29 +1,13 @@
-@charset "UTF-8";
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?7j3tf2");
-  src: url("fonts/icomoon.eot?#iefix7j3tf2") format("embedded-opentype"), url("fonts/icomoon.ttf?7j3tf2") format("truetype"), url("fonts/icomoon.woff?7j3tf2") format("woff"), url("fonts/icomoon.svg?7j3tf2#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 html, body {
   font-family: 'Raleway', sans-serif;
   background-color: #E7E7E7;
-  color: #8A8A8A; }
+  color: #8A8A8A;
+  letter-spacing: 0.0625rem;
+  word-spacing: 0.0625rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500; }
+  font-weight: 500;
+  color: #464646; }
 
 a {
   text-decoration: none;
@@ -59,10 +43,26 @@ a {
 /**********************
 * ARTICLE
 **********************/
+.article-nav ul {
+  margin: 2rem 3rem;
+  padding: 0; }
+.article-nav li {
+  list-style: none;
+  margin: 0;
+  display: inline-block; }
+  .article-nav li:first-child {
+    width: 30%; }
+  .article-nav li:nth-child(2) {
+    width: 39%;
+    text-align: center; }
+  .article-nav li:nth-child(3) {
+    width: 30%;
+    text-align: right; }
+
 .article {
-  max-width: 900px;
   padding-top: 1px;
-  margin: 5rem auto; }
+  max-width: 900px;
+  margin: 0 auto; }
   .article h1 {
     text-transform: uppercase;
     text-align: center;
@@ -79,22 +79,38 @@ a {
       font-family: 'PT Sans', sans-serif; }
       .article .article-info h3.comments {
         position: relative;
-        margin-left: 2.5rem; }
+        margin-left: 1.7rem; }
         .article .article-info h3.comments::before {
           font-family: 'icomoon';
-          content: "";
+          font-style: normal;
           position: absolute;
           left: -1.2rem;
           top: 2px; }
       .article .article-info h3.likes {
         position: relative;
-        margin-left: 1.5rem; }
+        margin-left: 2.7rem; }
         .article .article-info h3.likes::before {
           font-family: 'icomoon';
-          content: "";
+          font-style: normal;
           position: absolute;
           left: -1.2rem;
-          top: 1px; }
+          top: 0; }
+
+/**********************
+* COMMENTS
+*********************/
+.comments {
+  max-width: 900px;
+  margin: 0 auto; }
+  .comments h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid #8A8A8A;
+    border-top: 1px solid #8A8A8A;
+    padding: 2rem 0;
+    text-align: center;
+    /*text-transform: uppercase;*/ }
+  .comments .comment-wrapper {
+    padding-left: 2rem; }
 
 /**********************
 * TILE LAYOUT

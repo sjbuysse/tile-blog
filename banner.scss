@@ -1,10 +1,9 @@
-@mixin arrow-icon($icon){
+@mixin arrow-icon{
     position: absolute;
     top: 45vh;
     z-index: 1;
     &::before {
         font-family: 'icomoon';
-        content: $icon;
         font-size: 5rem;
         color: white;
         color: rgba(256, 256, 256, 0.5);
@@ -17,6 +16,7 @@
 
 .banner { 
     position: absolute; 
+    margin-top: 5vh;
     left: 0; 
     ul{
         padding: 0;
@@ -35,8 +35,9 @@
     ul li { 
         float: left; 
     }
-    & + p {
-        margin-top: 100vh;
+    /*position the next element under the banner*/
+    & + * {
+        margin-top: 108vh;
     }
 }
 .dots {
@@ -69,10 +70,10 @@
 
 .prev {
     left: 3rem;
-    @include arrow-icon("\e603")
+    @include arrow-icon;
 }
 .next {
     right: 3rem;
-    @include arrow-icon("\e604")
+    @include arrow-icon;
 }
 
